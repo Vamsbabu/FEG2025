@@ -148,15 +148,31 @@ a {
   text-decoration: none;
   transition: color var(--transition-fast);
 }
+/* 
 
+.cricle span{
+  padding: 20px;
+  color: var(--color-bg-primary);
+border-radius: 50%;
+width:40px;
+height: 40px;
+  background-color: var(--color-secondary);
+  margin-inline-start: 90%;
+  
+}
+.cricle span:hover{
+  scroll-behavior: smooth;
+  position: relative;
+  cursor: pointer;
 
+} */
 a:hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
   
 }
  
-/* =======================================header section ============================*/
+/* ========================header section ============================*/
 .header{
     display: flex;
     justify-content: space-around;
@@ -171,18 +187,10 @@ h2{
 
 
 .header-nav-list{
-   
     list-style: none;
     display: flex;
-    gap: 40px;  
-   
+    gap: 40px;     
 }
-/* .header-nav-list a:active {
-  color: var(--color-primary-dark); 
-}
-.header-nav-list a:visited{
-  color: var(--color-primary);
-} */
 
 p{
   color: var(--color-text-primary);
@@ -341,18 +349,21 @@ opacity: 0;
   padding: 20px;
   border: var(--radius-sm);
   width: 500px;
+  border-radius: var(--radius-lg);
   
  }
  .card2{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   width: 500px;
+  border-radius: var(--radius-lg);
 
  }
  .card3{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   width: 500px;
+ border-radius: var(--radius-lg);
  }
 
  .cardbtn button{
@@ -371,7 +382,8 @@ opacity: 0;
     box-shadow: var(--shadow-md);
  }
  .cards img{
-  width: 460px;
+  margin-left: 30px;
+  width: 400px;
   height: 300px;
   border-radius: var(--radius-md);
  }
@@ -466,7 +478,107 @@ opacity: 0;
     width: 95%;
    }
    
+   /*===================================== about page ==========================================*/
+   .ourmission{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 100px;
+   
+   }
+    .ourmission img{
+    margin-left: 100px;
+    width: 500px;
+    height: 300px;
+    border-radius: var(--radius-md);
+   }
+.cardaboutimg img{
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   margin-left: 150px;
+}
+
+.cards .card1 h2{
+  margin-left: 120px;
+  margin-bottom: -20px;
+}
+.p{
+  margin-left: 40px;
+  margin-top: -10px;
+}
+.p2{
+  margin-top: -10px;
+  margin-left: 100px;
+}
+.e{
+  margin-left: 140px;
+}
+.box{
+   margin-left: 100px;
+   display: flex;
+}
+.box img{
+  margin-left: 200px;
+  width: 500px;
+  height: 300px;
+  border-radius: var(--radius-sm);
+}
+.getting{
+  margin-top: -100px;
+  margin-inline-start: 100px;
+}
+/*=========================================== speakerspage===================================*/
+.speakersbtn button{
+ 
+  margin-left: 10px;
+ 
+}
+.cardbtn{
+  margin-left: 200px;
+}
+.speakersbtn .btn2{
+  background-color: var(--color-text-inverse);
+  color: var(--color-primary);
+}
+.speakersbtn .btn2:hover{
+   background-color: var(--color-primary-dark);
+    color: var(--color-text-inverse);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+ 
+}
+.speakercards{
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.speakercards img:hover{
+  transform: scale(1.14); 
+}
+.speakercards p:hover{
   
+  opacity: 0.5;
+  transform: translateY(-40px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.speakersbtn a:hover{
+  background-color: var(--color-bg-secondary);
+}
+
+/*============================ schedule page===========================*/
+.schedulenav{
+  margin-left:var(--spacing-20);
+}
+.scheduleh2{
+  font-size: var(--font-size-2xl);
+}
+.days{
+  margin-left: var(--spacing-20);
+}
+
+
+
+
+
  /* @media (max-width:900px){
   .header{
     flex-direction: column;
