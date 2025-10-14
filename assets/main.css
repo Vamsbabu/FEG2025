@@ -31,6 +31,7 @@
 
 --gradient-primary: linear-gradient(135deg, #a3bffa 0%, #c3aed6 100%);
 --gradient-hero: linear-gradient(135deg, #c3d9ff 0%, #d9c2f0 100%);
+--gradient-card8:linear-gradient(135deg, #dfba13 0%, #d79212 100%);
 
   
   /* Typography */
@@ -339,7 +340,7 @@ opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 50px 20px;
     background-color: var(--color-bg-secondary); 
     
@@ -348,25 +349,27 @@ opacity: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   border: var(--radius-sm);
-  width: 500px;
+  /* width: 500px; */
   border-radius: var(--radius-lg);
+
   
  }
  .card2{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
-  width: 500px;
+  /* width: 500px; */
   border-radius: var(--radius-lg);
 
  }
  .card3{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
-  width: 500px;
+ 
  border-radius: var(--radius-lg);
  }
 
  .cardbtn button{
+  margin-left: -200px;
     padding: 10px 20px;
    background-color: var(--color-primary);
     color: var(--color-text-inverse);
@@ -384,7 +387,7 @@ opacity: 0;
  .cards img{
   margin-left: 30px;
   width: 400px;
-  height: 300px;
+  height: 500px;
   border-radius: var(--radius-md);
  }
  .cardimgbtn :hover{
@@ -394,7 +397,7 @@ opacity: 0;
     box-shadow: var(--shadow-md);
  }
  
- /*===================================cardimgbtn=======================*/
+ /*===================================cardimgbtns=======================*/
   .cardimgbtn button{
     margin-inline-start: 45%;
   
@@ -499,20 +502,15 @@ opacity: 0;
 }
 
 .cards .card1 h2{
-  margin-left: 120px;
-  margin-bottom: -20px;
+  margin-left: 100px;
+  
 }
-.p{
-  margin-left: 40px;
-  margin-top: -10px;
-}
+
 .p2{
   margin-top: -10px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
-.e{
-  margin-left: 140px;
-}
+
 .box{
    margin-left: 100px;
    display: flex;
@@ -533,6 +531,14 @@ opacity: 0;
   margin-left: 10px;
  
 }
+.speakercard img{
+  width: 400px;
+  height: 500px;
+
+}
+.send{
+  margin-right: 200px;
+}
 .cardbtn{
   margin-left: 200px;
 }
@@ -551,9 +557,9 @@ opacity: 0;
   flex-wrap: wrap;
   margin-top: 50px;
 }
-.speakercards img:hover{
-  transform: scale(1.14); 
-}
+
+
+
 .speakercards p:hover{
   
   opacity: 0.5;
@@ -561,20 +567,360 @@ opacity: 0;
   transition: opacity 0.6s, transform 0.6s;
 }
 .speakersbtn a:hover{
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-border);
+  
+}
+.btn3 button{
+  
+    padding: 8px 18px;
+    background-color: var(--color-accent);
+    color: var(--color-text-primary);
+    border-radius: var(--radius-xl);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color var(--transition-fast);
+}
+.btn3:hover button{
+   background-color: var(--color-primary-dark);
+    color: var(--color-text-inverse);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+
+}
+.btn4 button{
+    padding: 8px 18px;
+    background-color: var(--color-error);
+    color: var(--color-text-primary);
+     border-radius: var(--radius-xl);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color var(--transition-fast);
+}
+.btn4:hover button{
+   background-color: var(--color-primary-dark);
+    color: var(--color-text-inverse);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+
 }
 
 /*============================ schedule page===========================*/
 .schedulenav{
   margin-left:var(--spacing-20);
 }
-.scheduleh2{
-  font-size: var(--font-size-2xl);
+ .days>h2{
+  font-size: var(--font-size-xl);
+  margin-left: 100px;
+
+  
+} 
+ 
+.schedulep{
+  margin-top: -50px;
 }
 .days{
   margin-left: var(--spacing-20);
+  
 }
 
+ .scheduleh3{
+
+  margin-left: 150px;
+  font-size: var(--font-size-xl);
+}
+.s button{
+  margin-inline-start: 0px;
+}
+#day1 .cards{
+  margin: var(--spacing-2);
+  box-shadow: var(--shadow-md);
+
+
+ /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+.section-footer{
+  margin-top:var(--spacing-4);
+}
+/*=========================contact page=============================*/
+
+.forms{
+   display: flex;
+   justify-content: center;
+   
+}
+#checkbox{
+  width: 20px;
+ 
+}
+input{
+  width: 400px;
+  height: 40px;
+}
+.forms button{
+  margin-left: 20%;
+}
+ .card7{
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border: var(--radius-sm);
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  */
+  border-radius: var(--radius-lg);
+ }
+ 
+ .infop{
+  color: var(--color-primary);
+  margin-left: 30px;
+ }
+ .stp{
+  color: var(--color-primary);
+ }
+ 
+ .Ready1{
+  background: var(--gradient-hero); 
+   
+ }
+ .Ready1 .btn2 button{
+  margin-left: -50px;
+  
+ }
+ 
+.Ready1 .readyp{
+  margin-left: 500px;
+}
+
+/*====================  galleryevent page===========================*/
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.img-box img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+.img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+ 
+  padding: 15px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.img-text h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.img-text p {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  font-weight: 400;
+  color: var(--color-bg-secondary);
+}
+
+/* Hover effects */
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .img-text {
+  opacity: 1;
+  color: var(--color-accent);
+  transform: translateY(0);
+}
+
+.gallerycard img{
+  width: 400px;
+  height: 300px;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-xl);
+
+}
+.eventcard {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping into rows */
+  justify-content: center;
+  gap: 20px;
+
+}
+.btn5 button{
+   padding: 10px 20px;
+   margin-left: 600px;
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color var(--transition-fast);
+
+}
+.btn5:hover button{
+  background-color: var(--color-primary-dark);
+    color: var(--color-text-inverse);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+
+}
+.btn6 button{
+  display: flex;
+   margin-top: -40px;
+  
+    padding: 8px 18px;
+    margin-inline-start: 750px;
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-secondary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color var(--transition-fast);
+
+}
+.btn6:hover button{
+  background-color: var(--color-primary-dark);
+    color: var(--color-text-inverse);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+
+}
+
+/*==================================registerpage===============*/
+.mostpop{
+  background-color: var(--color-primary);
+  margin: -13px;
+  border-radius: var(--radius-xl);
+  
+}
+.regh1{
+  margin-left: 180px;
+  font-size: var(--font-size-2xl);
+}
+#regcard2{
+  border: solid var(--color-primary);
+
+}
+
+
+.regh2{
+  margin-left: 150px;
+}
+.regh9{
+  margin-left: 100px;
+}
+
+
+.regh8{
+  margin-left: 100px;
+  margin-top: -20px;
+}
+.regh6{
+  margin-left: 30px;
+}
+.card2 .cardbtn button{
+  width: 450px;
+}
+.card8{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+ border-radius: var(--radius-xl);
+background: var(--gradient-card8);
+}
+
+form {
+  background: #fff;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.checkreg{
+  display: inline;
+}
+.checkboxes1 {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 10px;
+
+  
+ 
+}
+
+.checkboxes1 label {
+  font-weight: 400;
+  width: 20px;
+} 
+/*==============================scrolling button================*/
+html {
+  scroll-behavior: smooth; /* enables smooth scrolling */
+}
+
+/* Scroll button */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; 
+  background-color: #0dc447;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(243, 242, 242, 0.3);
+  transition: background 0.3s, transform 0.3s;
+  z-index: 999;
+}
+
+
+.scroll-top:hover {
+  background-color: #1f2021;
+  transform: scale(1.1);
+}
 
 
 
