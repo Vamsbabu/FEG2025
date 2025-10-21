@@ -31,7 +31,7 @@
 
 --gradient-primary: linear-gradient(135deg, #a3bffa 0%, #c3aed6 100%);
 --gradient-hero: linear-gradient(135deg, #c3d9ff 0%, #d9c2f0 100%);
---gradient-card8:linear-gradient(135deg, #dfba13 0%, #d79212 100%);
+--gradient-card8:linear-gradient(135deg, #dfba13 0%, #ff4502 100%);
 
   
   /* Typography */
@@ -149,24 +149,7 @@ a {
   text-decoration: none;
   transition: color var(--transition-fast);
 }
-/* 
 
-.cricle span{
-  padding: 20px;
-  color: var(--color-bg-primary);
-border-radius: 50%;
-width:40px;
-height: 40px;
-  background-color: var(--color-secondary);
-  margin-inline-start: 90%;
-  
-}
-.cricle span:hover{
-  scroll-behavior: smooth;
-  position: relative;
-  cursor: pointer;
-
-} */
 a:hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
@@ -184,6 +167,9 @@ a:hover {
 h2{
   color: var(--color-primary-dark);
  
+}
+.header-nav-list a.active {
+  color:var(--color-primary);
 }
 
 
@@ -336,6 +322,7 @@ opacity: 0;
 
  }
  .cards{
+  flex-wrap: wrap;
   margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -346,30 +333,49 @@ opacity: 0;
     
  }
  .card1{
+  display: block;
+  justify-content: center;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   border: var(--radius-sm);
-  /* width: 500px; */
+
   border-radius: var(--radius-lg);
+  margin: var(--spacing-2);
 
   
  }
  .card2{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
-  /* width: 500px; */
+  border: var(--radius-sm);
   border-radius: var(--radius-lg);
+  margin: var(--spacing-2);
 
  }
  .card3{
+  
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
+  border: var(--radius-sm);
+  margin: var(--spacing-2);
+  width: 400px;
+ 
+ border-radius: var(--radius-lg);
+ }
+ .card4{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border: var(--radius-sm);
+  margin: var(--spacing-2);
+  width: 400px;
  
  border-radius: var(--radius-lg);
  }
 
  .cardbtn button{
-  margin-left: -200px;
+  margin-left: -210px;
+  /* width: 380px; */
     padding: 10px 20px;
    background-color: var(--color-primary);
     color: var(--color-text-inverse);
@@ -385,9 +391,8 @@ opacity: 0;
     box-shadow: var(--shadow-md);
  }
  .cards img{
-  margin-left: 30px;
-  width: 400px;
-  height: 500px;
+  width: 500px;
+  height: 200px;
   border-radius: var(--radius-md);
  }
  .cardimgbtn :hover{
@@ -426,6 +431,11 @@ opacity: 0;
   .h3{
    padding: 20px;
   }
+  .readyp1{
+     margin-top: -20px;
+   margin-inline-start: 300px;
+
+  }
   .readyp{
     margin-top: -20px;
    margin-inline-start: 400px;
@@ -454,8 +464,8 @@ opacity: 0;
    }
 
    .readyp2{
-    margin: 20px;
-    padding: 10px;
+   margin: var(--spacing-2);
+    padding: var(--spacing-2);
     margin-inline-start: 40%;
    }
    /*====================== footer section================*/
@@ -476,6 +486,7 @@ opacity: 0;
    }
    .footerp2{
      margin-inline-start: 40%;
+     
    }
    .hr{
     width: 95%;
@@ -494,7 +505,7 @@ opacity: 0;
     height: 300px;
     border-radius: var(--radius-md);
    }
-.cardaboutimg img{
+.meetimg img{
    border-radius: 50%;
    width: 100px;
    height: 100px;
@@ -502,31 +513,42 @@ opacity: 0;
 }
 
 .cards .card1 h2{
-  margin-left: 100px;
+  margin-left: 90px;
   
 }
 
-.p2{
-  margin-top: -10px;
-  margin-left: 50px;
-}
-
+.card1 img{
+  /* margin-left: 20px; */
+  flex-wrap: wrap;
+  width: 400px;
+  height: 200px;
+  border-radius: var(--radius-md);
+ }
 .box{
    margin-left: 100px;
    display: flex;
 }
 .box img{
-  margin-left: 200px;
+  margin-right: 100px;
   width: 500px;
   height: 300px;
   border-radius: var(--radius-sm);
+}
+.e{
+  margin-left: 130px;
 }
 .getting{
   margin-top: -100px;
   margin-inline-start: 100px;
 }
 /*=========================================== speakerspage===================================*/
+ 
+.dr{
+  margin: 10px;
+}
 .speakersbtn button{
+  display: inline-block;
+
  
   margin-left: 10px;
  
@@ -614,29 +636,59 @@ opacity: 0;
 
   
 } 
+  .schedulenav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    
+
+    .day-schedule {
+      display: none;
+      padding: 20px;
+    
+    }
+
+    body:not(:has(:target)) #day1 {
+      display: block;
+    }
+
+   
+    .day-schedule:target {
+      display: block;
+    }
+
+    /* .schedulecard {
+      background: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    } */
  
 .schedulep{
   margin-top: -50px;
 }
-.days{
-  margin-left: var(--spacing-20);
-  
-}
+
 
  .scheduleh3{
-
   margin-left: 150px;
   font-size: var(--font-size-xl);
 }
-.s button{
-  margin-inline-start: 0px;
-}
+
 #day1 .cards{
   margin: var(--spacing-2);
-  box-shadow: var(--shadow-md);
-
-
- /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: var(--shadow-md); 
+}
+#day2 .cards{
+  margin: var(--spacing-2);
+  box-shadow: var(--shadow-md); 
+}
+#day3 .cards{
+  margin: var(--spacing-2);
+  box-shadow: var(--shadow-md); 
 }
 .section-footer{
   margin-top:var(--spacing-4);
@@ -649,8 +701,14 @@ opacity: 0;
    
 }
 #checkbox{
-  width: 20px;
+  width: 10px;
+  margin-bottom: -9px;
+  margin-left: -2px;
  
+}
+.data{
+  margin-left: 5px;
+  margin-top: -25px;
 }
 input{
   width: 400px;
@@ -664,13 +722,17 @@ input{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
   border: var(--radius-sm);
-  /* display: flex;
-  justify-content: center;
-  align-content: center;
-  */
+  
   border-radius: var(--radius-lg);
  }
+ .formb{
+  margin-left: 120px;
+  padding: 5px;
+ }
  
+ .formp{
+  margin-left: 100px;
+ }
  .infop{
   color: var(--color-primary);
   margin-left: 30px;
@@ -701,6 +763,7 @@ input{
 }
 
 .img-box img {
+  /* margin-left: 20px; */
   width: 400px;
   height: 300px;
   object-fit: cover;
@@ -806,18 +869,40 @@ input{
 .mostpop{
   background-color: var(--color-primary);
   margin: -13px;
+   position: relative;
+  
   border-radius: var(--radius-xl);
   
 }
+.regh10{
+  color: var(--color-accent);
+  margin-left: 140px;
+  
+}
+/* .regh1{
+   display: inline-block;
+} */
+   .Personal{
+    margin-left: 100px;
+   }
+
 .regh1{
-  margin-left: 180px;
+  
+  
+  
+  color: var(--color-bg-primary);
+  
+  margin-left: 120px;
   font-size: var(--font-size-2xl);
+   
 }
 #regcard2{
   border: solid var(--color-primary);
 
 }
-
+ #regbutton{
+  margin-left: -350px;
+ }
 
 .regh2{
   margin-left: 150px;
@@ -830,18 +915,23 @@ input{
 .regh8{
   margin-left: 100px;
   margin-top: -20px;
+  opacity: 0.6;
 }
 .regh6{
   margin-left: 30px;
 }
-.card2 .cardbtn button{
-  width: 450px;
+#regbutton2 button{
+  width: 380px;
 }
 .card8{
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
  border-radius: var(--radius-xl);
 background: var(--gradient-card8);
+margin-top: -40px;
+}
+.early{
+  color: var(--color-bg-secondary);
 }
 
 form {
@@ -923,26 +1013,356 @@ html {
 }
 
 
+ /*========================== media quires=========================*/
 
-
- /* @media (max-width:900px){
+/* Small devices (phones 310px–640px) */
+@media screen and (min-width: 310px) and (max-width: 640px) {
   .header{
     flex-direction: column;
     align-items: flex-start;
-
-    .header-logo {
-      margin-bottom: var(--spacing-4);
-    }
-    .header-nav-list {
-      flex-direction: column;
-      gap: var(--spacing-4);
-    }
-.btn button{
-      margin-inline-start: 0px;
+    padding: 10px;
+  }
+  .btn button {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+  .header-nav-list {
     
-    }
-  }} */
-
-
+    margin-inline-start: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 
   
+  .btn1,
+  .btn2 {
+    margin-inline-start: 0;
+    margin-top: 10px;
+    display: block;
+  }
+
+  
+  .btn1 button,
+  .btn2 button {
+    width: 100%;
+  }
+
+  .section-hero {
+
+    padding: 60px 10px;
+  }
+
+  .hero-title {
+    margin-top: 10px;
+    font-size: var(--font-size-3xl);
+  }
+
+  .hero-subtitle,
+  .hero-date {
+    font-size: var(--font-size-base);
+  }
+ #herobtn1 {
+    display: block;
+    margin-inline-start: 0px;
+   
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  #herobtn2 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+   
+  }
+
+  .cards {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .cards img,
+  .card1 img,
+  .card3,
+  .card4,
+  .card2 {
+    width: 100%;
+  }
+
+  .cardbtn button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .cardimgbtn button {
+    margin-inline-start: 0;
+    width: 100%;
+  }
+
+  .readyp,
+  .readyp1,
+  .readyp2 {
+    margin-inline-start: 0;
+    text-align: center;
+  }
+  
+  .cardpbtn button {
+    margin-inline-start: 0;
+    width: 100%;
+  }
+
+  .section-footer {
+    flex-direction: column;
+    margin-inline-start: 0;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+  }
+
+  .Quick,
+  .info,
+  .footerp2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .ourmission,
+  .box {
+    margin-left: 50px;
+    gap: 7px;
+    flex-direction: column;
+  }
+  
+
+  .ourmission img,
+  .box img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .meetimg img {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+   
+  }
+ 
+
+  .schedulenav {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .forms {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .forms button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .Ready1 .readyp {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .img-box img,
+  .gallerycard img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn5 button,
+  .btn6 button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .register .card8,
+  .mostpop {
+    margin: 0 10px;
+  }
+
+  .regh1,
+  .regh2,
+  .regh10,
+  .regh6,
+  .regh8,
+  .regh9 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #regbutton,
+  .btn3 button,
+  .btn4 button,
+  #regbutton2 button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .scroll-top {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+/* Medium devices (tablets, 641px–1024px) */
+@media screen and (min-width: 741px) and (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn button {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+
+  .header-nav-list {
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+   #herobtn1 {
+    display: block;
+    margin-inline-start: 0px;
+   
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  #herobtn2 {
+    display: block;
+    margin-inline-start: 0px;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+   
+  }
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card3,
+  .card4,
+  .card1 img {
+    width: 90%;
+  }
+
+  
+  .btn1 {
+    margin-inline-start: 0px;
+    text-align: center;
+  }
+  .cardbtn {
+    margin-inline-start: 100px;
+    text-align: center;
+  }
+  .btn2{
+     margin-inline-start: 0px;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+
+
+  .btn1 button,
+  .btn2 button,
+  .cardbtn button,
+  .cardpbtn button {
+    width: 100%;
+  }
+
+  .hero-content .btn1,
+  .hero-content .btn2 {
+    margin-inline-start: 0;
+  }
+
+  .readyp,
+  .readyp1,
+  .readyp2,
+  .cardpbtn,
+  .cardpbtn button {
+    margin-inline-start: 0;
+    text-align: center;
+  }
+
+  .section-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-6);
+    text-align: center;
+  }
+
+  .forms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-box img {
+    width: 100%;
+  }
+
+  .btn5 button,
+  .btn6 button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+  }
+
+  #regbutton2 button {
+    width: 100%;
+  }
+
+  .regh1,
+  .regh10,
+  .regh8,
+  .regh2 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Large screens (desktops 1025px) */
+@media screen and (min-width: 1025px) {
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .img-box img {
+    max-width: 100%;
+  }
+
+  .footerp2 {
+    margin-inline-start: 40%;
+  }
+}
+
+
+
+

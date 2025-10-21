@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>speakers</title>
     <link rel="stylesheet" href="./main.css">
-    l
+    
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <ul class="header-nav-list">
                 <li> <a href="./index.html">Home</a></li>
                 <li> <a href="./about.html">About</a></li>
-                <li> <a href="./speakers.html">Speakers</a></li>
+                <li> <a href="./speakers.html" class="active">Speakers</a></li>
                 <li> <a href="./schedule.html">Schedule</a></li>
                 <li> <a href="./gallery.html">Gallery</a></li>
                 <li> <a href="./contact.html">Contact</a></li>
@@ -40,12 +40,13 @@
         </div>
 
     </section>
+    
     <h3> Filter by Category</h3>
     <div class="speakersbtn">
-        <a href="#speakercards">
+        <a href="#all">
             <div class="cardbtn"> <button class="hero-btn1">ALL</button>
         </a>
-        <a href="#space">
+        <a href="#bio"  >
             <button class="btn2">Al & Machine Learning </button>
         </a>
         <a href="#rob">
@@ -54,53 +55,20 @@
         <a href="#sub">
             <button class="btn2"> Space Technology</button>
         </a>
-        <a href="#bio">        <button class="btn2"> Biotechnology</button>
+        <a href="#space">        <button class="btn2"> Biotechnology</button>
             </a>
-        <a href="#rob">
+        <a href="#robotic">
         <button class="btn2"> Sudtainability</button>
         </a>
 
 
     </div>
-    <section class="speakercards">
+    <section class="speakercards" id="all" class="speaker-category" >
 
-        <Section class="cards" id="space">
-            <section class="cards" id="bio">
-                <div class="img-box card1">
-                    <img src="./images/pexels-fauxels-3183150.jpg" alt="image">
-                    <h4>Dr. Sarah Chen</h4>
-                     <div class="btn3"> <button class="hero-btn1">view Bio</button></div>
-
-                    <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                        
-                        years of experience in <br> Al development.</p>
-                    <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
-                </div>
-                <div class="img-box card1">
-                    <img src="./images/pexels-fauxels-3184299.jpg" alt="image">
-                    <h4>Dr. Sarah Chen</h4>
-                     <div class="btn3"> <button class="hero-btn1">view Bio</button></div>
-                    <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                        
-                        years of experience in <br> Al development.</p>
-                    <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
-                </div>
-            </section>
-            <div class="img-box card1">
-                <img src="./images/pexels-gustavo-fring-7156099.jpg" alt="image">
-                <h4>Dr. Sarah Chen</h4>
-                 <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
-                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                    
-                    years of experience in <br> Al development.</p>
-                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
-            </div>
-        </Section>
-
-        <section class="cards" id="sub">
+        <section class="cards" id="bio" class="speaker-category">
             <div class="img-box card1">
                 <img src="./images/pexels-fauxels-3184291.jpg" alt="image">
-                <h4>Dr. Sarah Chen</h4>
+                <h4 class="dr">Dr. Sarah Chen</h4>
                  <div class="btn3"> <button class="hero-btn1">view Bio</button></div>
                 <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
                     
@@ -108,8 +76,71 @@
                 <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
             </div>
             <div class="img-box card1">
-                <img src="./images/pexels-rdne-7648239.jpg" alt="image">
-                <h4>Dr. Sarah Chen</h4>
+                <img src="./images/pexels-fauxels-3184299.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
+                 <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
+                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
+                  
+                    years of experience in <br> Al development.</p>
+                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
+            </div>
+
+<div class="img-box card1">
+                <img src="./images/pexels-fauxels-3184299.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
+                 <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
+                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
+                  
+                    years of experience in <br> Al development.</p>
+                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
+            </div>
+
+        </section>
+
+        <section class="cards" id="rob" class="speaker-category">
+            <div class="img-box card1" id="space" class="speaker-category">
+                <img src="./images/pexels-shkrabaanthony-5862374.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
+                 <div class="btn3"> <button class="hero-btn1">view Bio</button></div>
+                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
+                    
+                    years of experience in <br> Al development.</p>
+                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
+            </div>
+            <div class="img-box card1">
+                <img src="./images/pexels-fauxels-3183150.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
+                 <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
+                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
+                  
+                    years of experience in <br> Al development.</p>
+                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
+            </div>
+
+           <div class="img-box card1">
+                <img src="./images/pexels-fauxels-3184299.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
+                 <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
+                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
+                  
+                    years of experience in <br> Al development.</p>
+                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
+            </div>
+
+        </section>
+        <section class="cards" id="sub" class="speaker-category">
+            <div class="img-box card1">
+                <img src="./images/pexels-kindelmedia-7688336.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
+                 <div class="btn3"> <button class="hero-btn1">view Bio</button></div>
+                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
+                    
+                    years of experience in <br> Al development.</p>
+                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
+            </div>
+            <div class="img-box card1">
+                <img src="./images/pexels-edmond-dantes-4342493.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
                  <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
                 <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
                   
@@ -118,55 +149,16 @@
             </div>
 
             <div class="img-box card1">
-                <img src="./images/pexels-fauxels-3183150.jpg" alt="image">
-                <h4>Dr. Sarah Chen</h4>
+                <img src="./images/pexels-fauxels-3184299.jpg" alt="image">
+                <h4 class="dr">Dr. Sarah Chen</h4>
                  <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
                 <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                    over
-                    15
+                  
                     years of experience in <br> Al development.</p>
                 <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
             </div>
 
         </section>
-        <section class="cards" id="robotics">
-            <section class="cards" id="rob">
-                <div class="img-box card1">
-                    <img src="./images/pexels-kindelmedia-7688336.jpg" alt="image">
-                    <h4>Dr. Sarah Chen</h4>
-                     <div class="btn3"> <button class="hero-btn1">view Bio</button></div>
-                    <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                        over
-                        15
-                        years of experience in <br> Al development.</p>
-                    <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
-                </div>
-            </section>
-           
-
-            <div class="img-box card1">
-                <img src="./images/pexels-kindelmedia-7688336.jpg" alt="image">
-                <h4>Dr. Sarah Chen</h4>
-                 <div class="btn3"> <button class="hero-btn1">ge</button></div>
-                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                    over
-                    15
-                    years of experience in <br> Al development.</p>
-                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
-            </div>
-            <div class="img-box card1">
-                <img src="./images/pexels-fauxels-3184291.jpg" alt="image">
-                <h4>Dr. Sarah Chen</h4>
-                 <div class="btn4"> <button class="hero-btn1">view Bio</button></div>
-                <p>AI Research Director, TechCorp Leading expert in machine <br>learning and neural networks with
-                    over
-                    15
-                    years of experience in <br> Al development.</p>
-                <div class="btn1"> <button class="hero-btn1">view Bio</button></div>
-            </div>
-
-        </section>
-
     </section>
 
     <section class="section-footer">
